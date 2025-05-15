@@ -1,0 +1,124 @@
+/* General body styling for layout and background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Center content horizontally */
+    justify-content: center;
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(135deg, #1e293b, #4f46e5); /* Darker, sleek gradient */
+    font-size: 20px; /* Base font size for scaling */
+    color: #f0f0f0; /* Adjust text color for better contrast if needed */
+}
+
+/* Styling for the profile card container */
+.profile-card {
+    width: 400px; /* Card width */
+    padding: 40px; /* Inner spacing */
+    background: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center-align text */
+    font-family: 'Roboto', sans-serif; /* Font for the card */
+    color: #333; /* Default text color */
+}
+
+/* Styling for the profile image */
+.profile-image img {
+    width: 170px; /* Image width */
+    height: 170px; /* Image height to maintain a perfect circle */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px; /* Space below the image */
+    border: 2px solid #4f46e5; /* Thinner, sleek border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+/* Styling for the name (h1) */
+.profile-info h1 {
+    font-size: 2.2rem; /* Larger font size for the name */
+    margin: 10px 0; /* Vertical spacing */
+    color: #1e293b; /* Darker text color */
+}
+
+/* Styling for the name link */
+.profile-info h1 a {
+    text-decoration: underline; /* Underline to indicate it's a link */
+    color: #1e293b; /* Match the name color */
+    font-weight: bold; /* Make the link stand out */
+    transition: color 0.3s ease, text-decoration-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the name link */
+.profile-info h1 a:hover {
+    color: #4f46e5; /* Change text color on hover */
+    text-decoration-color: #4f46e5; /* Change underline color on hover */
+}
+
+/* Styling for the role (h2) */
+.profile-info h2 {
+    font-size: 1.7rem; /* Larger font size for the role */
+    margin: 5px 0; /* Vertical spacing */
+    color: #64748b; /* Muted text color */
+}
+
+/* Styling for the bio paragraph */
+.profile-info p {
+    font-size: 1.1rem; /* Slightly larger font size */
+    color: #475569; /* Muted text color */
+    line-height: 1.5; /* Improve readability */
+}
+
+/* Styling for the projects section */
+.profile-projects {
+    margin-top: 20px; /* Space above the section */
+    text-align: left; /* Align text to the left */
+}
+
+/* Styling for the projects section title */
+.profile-projects h3 {
+    font-size: 1.4rem; /* Larger font size for the title */
+    color: #1e293b; /* Darker text color */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+/* Styling for the projects list */
+.profile-projects ul {
+    list-style-type: disc; /* Add bullets to the list */
+    padding-left: 20px; /* Indent bullets */
+    margin: 0; /* Remove default margin */
+}
+
+/* Styling for individual project items */
+.profile-projects li {
+    font-size: 1rem; /* Font size for project descriptions */
+    color: #475569; /* Muted text color */
+    line-height: 1.5; /* Improve readability */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.profile-info ul {
+    list-style-type: disc; /* Add bullets to the list */
+    padding-left: 0; /* Remove default left padding */
+    margin: 10px 0; /* Add spacing around the list */
+    text-align: center; /* Center-align the list */
+}
+
+.profile-info ul li {
+    font-size: 1rem; /* Font size for list items */
+    color: #475569; /* Muted text color */
+    line-height: 1.5; /* Improve readability */
+    margin-bottom: 5px; /* Space between list items */
+    list-style-position: inside; /* Move bullets closer to the text */
+}
+
+.profile-info ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #4f46e5; /* Accent color for links */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.profile-info ul li a:hover {
+    color: #1e293b; /* Darker color on hover */
+}
